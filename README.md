@@ -3,7 +3,7 @@
 *iOS charging indicator inspired by [Charging Animation](https://ios.uplabs.com/posts/charging-animation)*
 
 
-<img src="/screenshot.gif" width="340">
+<img src="/screenshot.gif" width="230">
 
 </br>
 #### Requirements ####
