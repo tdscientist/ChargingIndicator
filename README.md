@@ -3,7 +3,10 @@
 *iOS charging indicator inspired by [Charging Animation](https://ios.uplabs.com/posts/charging-animation)*
 
 
-<img src="/screenshot.gif" width="230">
+
+[<img src="/screenshot.png" width="230">](https://youtu.be/9UFvToBWTOA)
+
+[![](https://cdn.rawgit.com/tdscientist/ChargingIndicator/0813e208/screenshot.png)](https://youtu.be/9UFvToBWTOA "Click to Watch video")
 
 </br>
 #### Requirements ####
