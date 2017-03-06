@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		072A13A91E58EBB70029FC30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A13A81E58EBB70029FC30 /* AppDelegate.swift */; };
+		072A13AB1E58EBB70029FC30 /* ChargerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A13AA1E58EBB70029FC30 /* ChargerController.swift */; };
+		072A13AE1E58EBB70029FC30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072A13AC1E58EBB70029FC30 /* Main.storyboard */; };
+		072A13B01E58EBB70029FC30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 072A13AF1E58EBB70029FC30 /* Assets.xcassets */; };
+		072A13B31E58EBB70029FC30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072A13B11E58EBB70029FC30 /* LaunchScreen.storyboard */; };
+		072A13BB1E58EE440029FC30 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A13BA1E58EE440029FC30 /* Utils.swift */; };
+		072A13BD1E58F0120029FC30 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A13BC1E58F0120029FC30 /* Colors.swift */; };
+		072A13BF1E58FD300029FC30 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A13BE1E58FD300029FC30 /* Const.swift */; };
+		073FCCF81E6CE3E5002A035C /* TitilliumWeb-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 073FCCF71E6CE3E5002A035C /* TitilliumWeb-Light.ttf */; };
+		079FD74A1E64F9A500DC5221 /* WaterWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079FD7491E64F9A500DC5221 /* WaterWave.swift */; };
+		079FD7501E65DB0B00DC5221 /* oldrepublic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 079FD74F1E65D92B00DC5221 /* oldrepublic.ttf */; };
+		07FB60F01E59A3CE0084A6DC /* ic_chevron_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FB60EF1E59A3CE0084A6DC /* ic_chevron_right.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		072A13A51E58EBB70029FC30 /* Charging Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Charging Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		072A13A81E58EBB70029FC30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		072A13AA1E58EBB70029FC30 /* ChargerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargerController.swift; sourceTree = "<group>"; };
+		072A13AD1E58EBB70029FC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		072A13AF1E58EBB70029FC30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		072A13B21E58EBB70029FC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		072A13B41E58EBB70029FC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		072A13BA1E58EE440029FC30 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		072A13BC1E58F0120029FC30 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		072A13BE1E58FD300029FC30 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		073FCCF71E6CE3E5002A035C /* TitilliumWeb-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Light.ttf"; sourceTree = "<group>"; };
+		079FD7491E64F9A500DC5221 /* WaterWave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterWave.swift; sourceTree = "<group>"; };
+		079FD74F1E65D92B00DC5221 /* oldrepublic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = oldrepublic.ttf; sourceTree = "<group>"; };
+		07FB60EF1E59A3CE0084A6DC /* ic_chevron_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_chevron_right.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		072A13A21E58EBB60029FC30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		072A139C1E58EBB60029FC30 = {
+			isa = PBXGroup;
+			children = (
+				072A13A71E58EBB70029FC30 /* Charging Animation */,
+				072A13A61E58EBB70029FC30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		072A13A61E58EBB70029FC30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				072A13A51E58EBB70029FC30 /* Charging Animation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		072A13A71E58EBB70029FC30 /* Charging Animation */ = {
+			isa = PBXGroup;
+			children = (
+				0736BB001E6B76EF00FA5298 /* classes */,
+				0736BAFF1E6B76E300FA5298 /* fonts */,
+				0736BAFE1E6B76DA00FA5298 /* images */,
+				072A13AF1E58EBB70029FC30 /* Assets.xcassets */,
+				072A13AC1E58EBB70029FC30 /* Main.storyboard */,
+				072A13B11E58EBB70029FC30 /* LaunchScreen.storyboard */,
+				072A13B41E58EBB70029FC30 /* Info.plist */,
+			);
+			path = "Charging Animation";
+			sourceTree = "<group>";
+		};
+		0736BAFE1E6B76DA00FA5298 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				07FB60EF1E59A3CE0084A6DC /* ic_chevron_right.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		0736BAFF1E6B76E300FA5298 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				079FD74F1E65D92B00DC5221 /* oldrepublic.ttf */,
+				073FCCF71E6CE3E5002A035C /* TitilliumWeb-Light.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		0736BB001E6B76EF00FA5298 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				072A13A81E58EBB70029FC30 /* AppDelegate.swift */,
+				072A13AA1E58EBB70029FC30 /* ChargerController.swift */,
+				072A13BA1E58EE440029FC30 /* Utils.swift */,
+				072A13BC1E58F0120029FC30 /* Colors.swift */,
+				072A13BE1E58FD300029FC30 /* Const.swift */,
+				079FD7491E64F9A500DC5221 /* WaterWave.swift */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		072A13A41E58EBB60029FC30 /* Charging Animation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 072A13B71E58EBB70029FC30 /* Build configuration list for PBXNativeTarget "Charging Animation" */;
+			buildPhases = (
+				072A13A11E58EBB60029FC30 /* Sources */,
+				072A13A21E58EBB60029FC30 /* Frameworks */,
+				072A13A31E58EBB60029FC30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Charging Animation";
+			productName = "Charging Animation";
+			productReference = 072A13A51E58EBB70029FC30 /* Charging Animation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		072A139D1E58EBB60029FC30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Adeyinka Adediji";
+				TargetAttributes = {
+					072A13A41E58EBB60029FC30 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MDCJGSLNV9;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 072A13A01E58EBB60029FC30 /* Build configuration list for PBXProject "Charging Animation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 072A139C1E58EBB60029FC30;
+			productRefGroup = 072A13A61E58EBB70029FC30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				072A13A41E58EBB60029FC30 /* Charging Animation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		072A13A31E58EBB60029FC30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07FB60F01E59A3CE0084A6DC /* ic_chevron_right.png in Resources */,
+				072A13B31E58EBB70029FC30 /* LaunchScreen.storyboard in Resources */,
+				079FD7501E65DB0B00DC5221 /* oldrepublic.ttf in Resources */,
+				073FCCF81E6CE3E5002A035C /* TitilliumWeb-Light.ttf in Resources */,
+				072A13B01E58EBB70029FC30 /* Assets.xcassets in Resources */,
+				072A13AE1E58EBB70029FC30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		072A13A11E58EBB60029FC30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079FD74A1E64F9A500DC5221 /* WaterWave.swift in Sources */,
+				072A13AB1E58EBB70029FC30 /* ChargerController.swift in Sources */,
+				072A13BD1E58F0120029FC30 /* Colors.swift in Sources */,
+				072A13A91E58EBB70029FC30 /* AppDelegate.swift in Sources */,
+				072A13BB1E58EE440029FC30 /* Utils.swift in Sources */,
+				072A13BF1E58FD300029FC30 /* Const.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		072A13AC1E58EBB70029FC30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				072A13AD1E58EBB70029FC30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		072A13B11E58EBB70029FC30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				072A13B21E58EBB70029FC30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		072A13B51E58EBB70029FC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		072A13B61E58EBB70029FC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		072A13B81E58EBB70029FC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = MDCJGSLNV9;
+				INFOPLIST_FILE = "Charging Animation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tdscientist.Charging-Animation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		072A13B91E58EBB70029FC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = MDCJGSLNV9;
+				INFOPLIST_FILE = "Charging Animation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tdscientist.Charging-Animation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		072A13A01E58EBB60029FC30 /* Build configuration list for PBXProject "Charging Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				072A13B51E58EBB70029FC30 /* Debug */,
+				072A13B61E58EBB70029FC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		072A13B71E58EBB70029FC30 /* Build configuration list for PBXNativeTarget "Charging Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				072A13B81E58EBB70029FC30 /* Debug */,
+				072A13B91E58EBB70029FC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 072A139D1E58EBB60029FC30 /* Project object */;
+}
