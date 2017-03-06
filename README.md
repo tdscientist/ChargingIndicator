@@ -3,16 +3,30 @@
 *iOS charging indicator inspired by [Charging Animation](https://ios.uplabs.com/posts/charging-animation)*
 
 
-<img src="/portrait.png" width="340">
+<img src="/screenshot.gif" width="340">
+
+</br>
+#### Requirements ####
+----
+* xCode 8.2.1
+* Siwft 3
+* iPhone device running on iOS 8 and above 
+
 
 </br>
 #### Todo ####
 ----
 
 - [x] iPhone support
-- [] iPad support
-- [] convert to a library 
+- [ ] iPad support
+- [ ] real estimated charging time 
+- [ ] convert to a library 
 </br>
+
+</br>
+#### Note ####
+----
+iOS simulator always return -1 for battery level. Run the project on a real device to get real figures
 
 </br>
 #### License ####
@@ -24,7 +38,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-http://www.apache.org/licenses/LICENSE-2.0
+   http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
