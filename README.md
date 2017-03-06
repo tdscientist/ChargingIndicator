@@ -6,7 +6,7 @@
 
 [<img src="/screenshot.png" width="230">](https://youtu.be/9UFvToBWTOA)
 
-[![](https://cdn.rawgit.com/tdscientist/ChargingIndicator/0813e208/screenshot.png)](https://youtu.be/9UFvToBWTOA "Click to Watch video")
+click image to watch video
 
 </br>
 #### Requirements ####
