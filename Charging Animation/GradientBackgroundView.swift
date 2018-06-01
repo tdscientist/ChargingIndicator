@@ -1,5 +1,5 @@
 //
-//  GradientBackground.swift
+//  GradientBackgroundView.swift
 //  Charging Animation
 //
 //  Created by Adeyinka Adediji on 01/06/2018.
@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class GradientBackground: UIView {
+class GradientBackgroundView: UIView {
     public override init(frame: CGRect) {
         super.init(frame: frame)
         updateView()
