@@ -13,7 +13,7 @@ import UIKit
 class WaterWave : UIView{
     
     let waveColor = UIColor.white
-    var waveBackgroundColor = Utils().hexStringToUIColorTranslucent(hex: "#ffffff", alphaValue: 0.3)
+    var waveBackgroundColor = UIColor.init(hex: "#ffffff", alpha: 0.3)
     var waveProgress = CGFloat(0)
     var a = Double(1.5)
     var b = Double(0)
@@ -29,7 +29,7 @@ class WaterWave : UIView{
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = waveBackgroundColor
-        waveWidth = Int(utils.getDeviceScreenWidth())
+        waveWidth = Int(utils.deviceScreenWidth())
         timer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(animateWave), userInfo: nil, repeats: true)
     }
     
@@ -38,7 +38,7 @@ class WaterWave : UIView{
     }
     
     // animate the waterwave
-    func animateWave () {
+    @objc func animateWave () {
         
         if (jia) {
             a += 0.01
@@ -71,7 +71,7 @@ class WaterWave : UIView{
         path.move(to: CGPoint(x: 0, y: waveProgress))
         
         for x in 0 ..< waveWidth {
-            y = CGFloat(a * sin(Double(x)/Double(180)*M_PI + 4*b/M_PI ) * 5 + Double(waveProgress))
+            y = CGFloat(a * sin(Double(x)/Double(180)*Double.pi + 4*b/Double.pi ) * 5 + Double(waveProgress))
             path.addLine(to: CGPoint(x: x, y: Int(y)))
         }
         
