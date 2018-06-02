@@ -30,14 +30,15 @@ class GradientBackgroundView: UIView {
     }
     
     private func updateView() {
+      
         subviews.forEach { $0.removeFromSuperview() }
-        let gradientLayer = layer as! CAGradientLayer
-        
+       
         let colorLayer = CAGradientLayer()
+        colorLayer.frame = frame
         colorLayer.colors = [UIColor(hex: Colors.DARK_TURQUOISE).cgColor, UIColor(hex: Colors.BLUE_VIOLET).cgColor]
         colorLayer.startPoint = CGPoint(x: 1.0, y: 0.5)
         colorLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
         
-        gradientLayer.addSublayer(colorLayer)
+        self.layer.addSublayer(colorLayer)
     }
 }
