@@ -11,13 +11,16 @@ import UIKit
 
 extension UIImageView {
     func tint(color: UIColor) {
-        self.image = self.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        self.image = self.image!.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
         self.tintColor = color
     }
 }
 
 extension UIColor {
-    convenience init(hex: String) {
+    static let BLUE_VIOLET = UIColor("#9F36F8")
+    static let DARK_TURQUOISE = UIColor("#15D1DE")
+    
+    convenience init(_ hex: String) {
         var cString = hex.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).uppercased()
         
         if cString.hasPrefix("#") {
@@ -35,7 +38,7 @@ extension UIColor {
         self.init(red: components.R, green: components.G, blue: components.B, alpha: 1)
     }
     
-    convenience init(hex: String, alpha: CGFloat) {
+    convenience init(_ hex: String, alpha: CGFloat) {
         var cString = hex.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).uppercased()
         
         if cString.hasPrefix("#") {
@@ -55,14 +58,6 @@ extension UIColor {
 }
 
 class Utils {
-    func deviceScreenWidth() -> CGFloat {
-        return UIScreen.main.bounds.width
-    }
-    
-    func deviceScreenHeight() -> CGFloat {
-        return UIScreen.main.bounds.height
-    }
-    
     func delay(_ delay: Double, closure: @escaping () -> ()) {
         DispatchQueue.main.asyncAfter(
             deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC),

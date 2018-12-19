@@ -6,95 +6,56 @@
 //  Copyright © 2017 Adeyinka Adediji. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-
-class WaterWave : UIView{
+class WaterWave: UIView {
+    lazy var waveDisplaylink = CADisplayLink()
+    lazy var waveLayer = CAShapeLayer()
+    fileprivate var waveWidth: CGFloat!
+    fileprivate var waveHeight: CGFloat!
+    private var waveAmplitude: CGFloat = 8
+    fileprivate var waveSpeed = CGFloat(0.05)
+    private var offsetX: CGFloat = 0
     
-    let waveColor = UIColor.white
-    var waveBackgroundColor = UIColor.init(hex: "#ffffff", alpha: 0.3)
-    var waveProgress = CGFloat(0)
-    var a = Double(1.5)
-    var b = Double(0)
-    var jia = false
-    var waveWidth = Int()
-    let utils = Utils()
-    
-    let timeInterval = Double(0.02)
-    var timer = Timer()
-    
-    let percentageIndicatorHeight = CGFloat(125)
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = waveBackgroundColor
-        waveWidth = Int(utils.deviceScreenWidth())
-        timer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(animateWave), userInfo: nil, repeats: true)
+        waveWidth = 2 * CGFloat(Double.pi) / bounds.size.width
+        waveHeight = bounds.size.height * 0.5
+        waveLayer.fillColor = UIColor.white.cgColor
+        layer.addSublayer(waveLayer)
+        waveDisplaylink = CADisplayLink(target: self, selector: #selector(getCurrentWave))
+        waveDisplaylink.add(to: RunLoop.current, forMode: RunLoop.Mode.common)
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    deinit {
+        waveDisplaylink.invalidate()
     }
     
-    // animate the waterwave
-    @objc func animateWave () {
-        
-        if (jia) {
-            a += 0.01
-        }else{
-            a -= 0.01
-        }
-        
-        if (a<=1) {
-            jia = true
-        }
-        
-        if (a>=1.5) {
-            jia = false
-        }
-        
-        b += 0.1
-        
-        setNeedsDisplay()
+    @objc fileprivate func getCurrentWave() {
+        offsetX += waveSpeed
+        setCurrentStatusWavePath()
     }
     
-    // draw the waterwave
-    override func draw(_ rect: CGRect) {
-        let context = UIGraphicsGetCurrentContext()
+    fileprivate func setCurrentStatusWavePath() {
         let path = CGMutablePath()
-        
-        context!.setLineWidth(1);
-        context!.setFillColor(waveColor.cgColor)
-        
-        var y = waveProgress
-        path.move(to: CGPoint(x: 0, y: waveProgress))
-        
-        for x in 0 ..< waveWidth {
-            y = CGFloat(a * sin(Double(x)/Double(180)*Double.pi + 4*b/Double.pi ) * 5 + Double(waveProgress))
-            path.addLine(to: CGPoint(x: x, y: Int(y)))
+        var y = bounds.size.width / 2
+        path.move(to: CGPoint(x: 0, y: y))
+        for i in 0...Int(bounds.size.width) {
+            y = waveAmplitude * sin(waveWidth * CGFloat(i) + offsetX) + waveHeight
+            path.addLine(to: CGPoint(x: CGFloat(i), y: y))
         }
         
-        path.addLine(to: CGPoint(x: CGFloat(waveWidth), y: rect.size.height))
-        path.addLine(to: CGPoint(x: 0, y: rect.size.height))
-        path.addLine(to: CGPoint(x: 0, y: waveProgress))
-        
-        context!.addPath(path);
-        context?.fillPath();
-        context!.drawPath(using: .stroke)
+        path.addLine(to: CGPoint(x: bounds.size.width, y: bounds.size.height))
+        path.addLine(to: CGPoint(x: 0, y: bounds.size.height))
+        path.closeSubpath()
+        waveLayer.path = path
     }
     
-    // change the progress(height) of the waterwave
-    func adjustWaveProgress(_ percentage: CGFloat, yCoordinateViewEnd: CGFloat) {
-        let progress = (percentage/100) * percentageIndicatorHeight
-        waveProgress = yCoordinateViewEnd - progress
-        resetParams()
+    func setWavePercentage(_ percentage: CGFloat) {
+        waveHeight = bounds.size.height * (1 - (percentage / 100))
     }
-    
-    // reset the waterwave view to effect any update done to it
-    func resetParams () {
-        timer.invalidate()
-        timer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(animateWave), userInfo: nil, repeats: true)
-    }
-    
 }

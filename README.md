@@ -11,9 +11,9 @@ click image to watch video
 </br>
 #### Requirements ####
 ----
-* xCode 8.2.1
-* Siwft 3
-* iPhone device running on iOS 8 and above 
+* xCode 10.1
+* Siwft 4.2
+* iPhone or iPad, running on iOS 9 and above
 
 
 </br>
@@ -21,7 +21,8 @@ click image to watch video
 ----
 
 - [x] iPhone support
-- [ ] iPad support
+- [x] iPad support
+- [x] use autoLayout
 - [ ] real estimated charging time 
 - [ ] convert to a library 
 </br>
@@ -35,7 +36,7 @@ iOS simulator always return -1 for battery level. Run the project on a real devi
 #### License ####
 ----
 ```
-Copyright 2017 Adeyinka Adediji
+Copyright 2018 Adeyinka Adediji
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -59,4 +60,4 @@ tdscientist@gmail.com
 </br>
 #### Credits ####
 ---
-* [WaterWave](https://github.com/LiweiDong/WaterWave)
+* [WaterWave](https://github.com/WSmalan/iOS-Swift-waterWave)

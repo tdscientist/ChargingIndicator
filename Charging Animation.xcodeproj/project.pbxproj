@@ -7,21 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0724958421C7850F0059FC23 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0724958321C7850F0059FC23 /* RingView.swift */; };
 		072A13A91E58EBB70029FC30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A13A81E58EBB70029FC30 /* AppDelegate.swift */; };
 		072A13AB1E58EBB70029FC30 /* ChargerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A13AA1E58EBB70029FC30 /* ChargerController.swift */; };
 		072A13AE1E58EBB70029FC30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072A13AC1E58EBB70029FC30 /* Main.storyboard */; };
 		072A13B01E58EBB70029FC30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 072A13AF1E58EBB70029FC30 /* Assets.xcassets */; };
 		072A13B31E58EBB70029FC30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072A13B11E58EBB70029FC30 /* LaunchScreen.storyboard */; };
 		072A13BB1E58EE440029FC30 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A13BA1E58EE440029FC30 /* Utils.swift */; };
-		072A13BD1E58F0120029FC30 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A13BC1E58F0120029FC30 /* Colors.swift */; };
-		072A13BF1E58FD300029FC30 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A13BE1E58FD300029FC30 /* Const.swift */; };
 		073FCCF81E6CE3E5002A035C /* TitilliumWeb-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 073FCCF71E6CE3E5002A035C /* TitilliumWeb-Light.ttf */; };
+		07996EE920C1FD6900FB3488 /* GradientBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07996EE820C1FD6900FB3488 /* GradientBackgroundView.swift */; };
 		079FD74A1E64F9A500DC5221 /* WaterWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079FD7491E64F9A500DC5221 /* WaterWave.swift */; };
 		079FD7501E65DB0B00DC5221 /* oldrepublic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 079FD74F1E65D92B00DC5221 /* oldrepublic.ttf */; };
 		07FB60F01E59A3CE0084A6DC /* ic_chevron_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FB60EF1E59A3CE0084A6DC /* ic_chevron_right.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0724958321C7850F0059FC23 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		072A13A51E58EBB70029FC30 /* Charging Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Charging Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		072A13A81E58EBB70029FC30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		072A13AA1E58EBB70029FC30 /* ChargerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargerController.swift; sourceTree = "<group>"; };
@@ -30,9 +31,8 @@
 		072A13B21E58EBB70029FC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		072A13B41E58EBB70029FC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		072A13BA1E58EE440029FC30 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		072A13BC1E58F0120029FC30 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		072A13BE1E58FD300029FC30 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		073FCCF71E6CE3E5002A035C /* TitilliumWeb-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Light.ttf"; sourceTree = "<group>"; };
+		07996EE820C1FD6900FB3488 /* GradientBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgroundView.swift; sourceTree = "<group>"; };
 		079FD7491E64F9A500DC5221 /* WaterWave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterWave.swift; sourceTree = "<group>"; };
 		079FD74F1E65D92B00DC5221 /* oldrepublic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = oldrepublic.ttf; sourceTree = "<group>"; };
 		07FB60EF1E59A3CE0084A6DC /* ic_chevron_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_chevron_right.png; sourceTree = "<group>"; };
@@ -102,9 +102,9 @@
 				072A13A81E58EBB70029FC30 /* AppDelegate.swift */,
 				072A13AA1E58EBB70029FC30 /* ChargerController.swift */,
 				072A13BA1E58EE440029FC30 /* Utils.swift */,
-				072A13BC1E58F0120029FC30 /* Colors.swift */,
-				072A13BE1E58FD300029FC30 /* Const.swift */,
 				079FD7491E64F9A500DC5221 /* WaterWave.swift */,
+				07996EE820C1FD6900FB3488 /* GradientBackgroundView.swift */,
+				0724958321C7850F0059FC23 /* RingView.swift */,
 			);
 			name = classes;
 			sourceTree = "<group>";
@@ -188,10 +188,10 @@
 			files = (
 				079FD74A1E64F9A500DC5221 /* WaterWave.swift in Sources */,
 				072A13AB1E58EBB70029FC30 /* ChargerController.swift in Sources */,
-				072A13BD1E58F0120029FC30 /* Colors.swift in Sources */,
 				072A13A91E58EBB70029FC30 /* AppDelegate.swift in Sources */,
+				0724958421C7850F0059FC23 /* RingView.swift in Sources */,
 				072A13BB1E58EE440029FC30 /* Utils.swift in Sources */,
-				072A13BF1E58FD300029FC30 /* Const.swift in Sources */,
+				07996EE920C1FD6900FB3488 /* GradientBackgroundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,13 +317,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = MDCJGSLNV9;
 				INFOPLIST_FILE = "Charging Animation/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tdscientist.charging.animation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -335,12 +335,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = MDCJGSLNV9;
 				INFOPLIST_FILE = "Charging Animation/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tdscientist.charging.animation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
