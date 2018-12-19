@@ -9,14 +9,17 @@
 click image to watch video
 
 </br>
+
 #### Requirements ####
 ----
+
 * xCode 10.1
 * Siwft 4.2
 * iPhone or iPad, running on iOS 9 and above
 
 
 </br>
+
 #### Todo ####
 ----
 
@@ -28,11 +31,13 @@ click image to watch video
 </br>
 
 </br>
+
 #### Note ####
 ----
 iOS simulator always return -1 for battery level. Run the project on a real device to get real figures
 
 </br>
+
 #### License ####
 ----
 ```
@@ -52,12 +57,14 @@ limitations under the License.
 ```
 
 </br>
+
 #### Contributions & Bug Reporting ####
 ---
 tdscientist@gmail.com 
 
 
 </br>
+
 #### Credits ####
 ---
 * [WaterWave](https://github.com/WSmalan/iOS-Swift-waterWave)
